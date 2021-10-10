@@ -1,0 +1,104 @@
+@font-face {
+	font-family: uni;
+	text-transform: uppercase;
+	src: url('../fonts/uni.ttf');
+}
+
+
+.menu {
+	text-transform: uppercase;
+	font-family: 'uni', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	
+	border-radius: 10px;
+	min-width: 200px;
+	color: #fff;
+
+
+	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0);
+	position: fixed;
+}
+
+.menu.align-left {
+	left: 40;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.menu.align-top-left {
+	left: 40;
+	top: 40;
+}
+
+.menu.align-top {
+	left: 50%;
+	top: 40;
+	transform: translate(-50%, 0);
+}
+
+.menu.align-top-right {
+	right: 10;
+	top: 40;
+}
+
+.menu.align-right {
+	right: 40;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.menu.align-bottom-right {
+	right: 40;
+	bottom: 40;
+}
+
+.menu.align-bottom {
+	left: 50%;
+	bottom: 40;
+	transform: translate(-50%, 0);
+}
+
+.menu.align-bottom-left {
+	left: 40;
+	bottom: 40;
+}
+
+
+.menu.align-center {
+	right: 50;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.menu .head {
+	background-color: #555555;
+	text-align: center;
+	border-radius: 4px;
+	line-height: 40px;
+	margin-top:100px;
+
+}
+
+.menu .menu-items {
+	max-height: 600px;
+	border-radius: 4px;
+	overflow-y: auto;
+}
+
+.menu .menu-items .menu-item {
+
+	display: block;
+	background-color: rgba(80, 80, 80, 0.5);
+	line-height: 32px;
+	color: #ffffff;
+	border-radius: 1px;
+	padding: 4px;
+	text-align: center;
+}
+
+.menu .menu-items .menu-item.selected {
+	background-color: rgb(32, 32, 32);
+	border-radius: 2px;
+
+}
