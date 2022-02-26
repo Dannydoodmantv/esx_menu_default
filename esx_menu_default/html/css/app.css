@@ -1,28 +1,23 @@
-@font-face {
-	font-family: uni;
-	text-transform: uppercase;
-	src: url('../fonts/uni.ttf');
-}
 
-
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
 .menu {
 	text-transform: uppercase;
-	font-family: 'uni', sans-serif;
+	font-family: 'Yantramanav', sans-serif;
 	font-size: 18px;
-	font-weight: 600;
-	
+	font-weight: 900;
+	text-shadow: 1px 2px 3px rgb(46, 46, 46);
 	border-radius: 10px;
-	min-width: 200px;
+	min-width: 14%;
 	color: #fff;
-
-
 	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0);
 	position: fixed;
+	margin-bottom: 5%;
 }
 
 .menu.align-left {
 	left: 40;
-	top: 50%;
+	top: 33%;
 	transform: translate(0, -50%);
 }
 
@@ -33,7 +28,7 @@
 
 .menu.align-top {
 	left: 50%;
-	top: 40;
+	top: 20;
 	transform: translate(-50%, 0);
 }
 
@@ -44,7 +39,7 @@
 
 .menu.align-right {
 	right: 40;
-	top: 50%;
+	top: 40%;
 	transform: translate(0, -50%);
 }
 
@@ -72,33 +67,34 @@
 }
 
 .menu .head {
-	background-color: #555555;
+	background-color: #252525;
 	text-align: center;
-	border-radius: 4px;
 	line-height: 40px;
 	margin-top:100px;
+	border-radius: 5px;
+	border: 2px solid #4b4b4b;
 
 }
 
 .menu .menu-items {
+	margin-top: 3%;
 	max-height: 600px;
-	border-radius: 4px;
 	overflow-y: auto;
+	font-weight: 600;
+	border-radius: 3px;
+	border: 2px solid #4b4b4b;
 }
 
 .menu .menu-items .menu-item {
-
 	display: block;
-	background-color: rgba(80, 80, 80, 0.5);
+	background-color: #252525;;
 	line-height: 32px;
 	color: #ffffff;
-	border-radius: 1px;
 	padding: 4px;
 	text-align: center;
 }
 
 .menu .menu-items .menu-item.selected {
-	background-color: rgb(32, 32, 32);
-	border-radius: 2px;
+	background-color: rgb(53, 53, 53);
 
 }
